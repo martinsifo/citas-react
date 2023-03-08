@@ -2,7 +2,7 @@ import Paciente from "./Paciente";
 
 function ListadoPacientes({ pacientes, setPaciente, eliminarPaciente }) {
   return (
-    <div className="w-100 lg:w-3/5 md:h-screen overflow-y-auto">
+    <div className="w-80 mx-auto lg:w-3/5 md:h-screen overflow-y-auto lg:flex items-center flex-col">
       {pacientes && pacientes.length ? (
         <>
           <h2 className="font-black text-3xl text-center">Listado Pacientes</h2>

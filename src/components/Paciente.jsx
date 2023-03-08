@@ -10,7 +10,7 @@ function Paciente({ paciente, setPaciente, eliminarPaciente }) {
   };
 
   return (
-    <div className="mx-5 my-5 bg-white shadow-md p-5 rounded-xl">
+    <div className="my-0 bg-white shadow-md p-5 rounded-xl lg:w-3/5 mb-5">
       <p className="font-bold mb-3 text-gray-700 uppercase">
         Nombre: {""}
         <span className="font-normal normal-case">{nombre}</span>
@@ -36,7 +36,7 @@ function Paciente({ paciente, setPaciente, eliminarPaciente }) {
         <span className="font-normal normal-case">{sintomas}</span>
       </p>
 
-      <div className="flex justify-between mt-5">
+      <div className="flex justify-between mt-5 flex-col md:flex-row gap-y-4">
         <button
           type="button"
           className="py-2 px-10 bg-indigo-600 hover:bg-indigo-700 text-white font-bold uppercase rounded-lg"
